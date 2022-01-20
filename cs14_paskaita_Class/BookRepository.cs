@@ -3,7 +3,9 @@ using System.Collections.Generic;
 
 namespace cs14_paskaita_Class
 {
-	public class BookRepository
+    // 2. Books repository
+    // 3. Repository saves a book in a file
+    public class BookRepository
 	{
         public List<Book> BookList;
 
@@ -12,9 +14,9 @@ namespace cs14_paskaita_Class
             BookList = bookList;
         }
 
-        public void BookSavingFunction()
+        public void BookSavingFunction(Book BookInstance)
         {
-            
+            BookList.Add(BookInstance);
         }
     }
 }
